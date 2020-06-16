@@ -1,3 +1,7 @@
+/* Red Color:  #E92038 - #b61426 - #38060B
+Orange Color: #E2AD28 - #da9a1d - #362907
+Green Color: #76981B- #6b812f - #626B47 */
+
 /*----------------------------*/
 /* BASIC SETUP */
 /*----------------------------*/
@@ -19,6 +23,7 @@ body {
   overflow-x: hidden;
 }
 /* --- HEADINGS --- */
+
 h1,h2,h3 {
   font-weight: 400;
   letter-spacing: 1px;
@@ -55,6 +60,7 @@ h2:after {
   margin: 0 auto;
   margin-top: 5px;
 }
+
 /* --- PARAGRAPHS --- */
 .long-copy{
   font-size: 100%;
@@ -70,6 +76,28 @@ h2:after {
   margin-top: 20px; 
   color: #38060B;  
 }
+
+/* --- LINKS --- */
+a:link,
+a:visited{
+    color: #b61426;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #b61426;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;    
+}
+
+a:hover,
+a:active {
+    color: #da9a1d;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+
+
 /*----------------------------*/
 /* GRID FLOWS */
 /*----------------------------*/
@@ -113,6 +141,8 @@ h2:after {
       width: 70%;
       height: auto;
       max-height: 80vh;
+
+      /* animation: moveInRight 1s ease-out; */
     }
 
 
@@ -128,6 +158,8 @@ h2:after {
       width: 90%;
       height: auto;
       max-height: 80vh;
+
+      animation: moveInLeft 2s ease-out;
     }
 
 /* NAV */
@@ -193,11 +225,6 @@ h2:after {
   justify-items: center;
 }
 
-  /* .eco-img { 
-    grid-column-start: 1; 
-    grid-column-end: 2; 
-  } */
-
     .eco-img img {
       width: 100%;
       height: auto;
@@ -206,22 +233,16 @@ h2:after {
     }
 
   .eco-listrow {
-    /* grid-column-start: 2; 
-    grid-column-end: 3; */
     display: grid;
     grid-template-columns: 1fr 4fr;    
     align-items: center;
   }
 
     .eco-listicon {
-      /* grid-column-start: 1; 
-      grid-column-end: 2; */
       justify-self: center;
     }
 
     .eco-listitem {
-      /* grid-column-start: 2; 
-      grid-column-end: 3; */
       justify-self: left;
     }
 
@@ -238,6 +259,12 @@ h2:after {
         width: 100%;
         height: auto;
         max-width: 150px;
+        border-radius: 15px;
+      }
+      
+      .eco-buttonrow a:link,
+      .eco-buttonrow a:visited {
+          border: 0;
       }
 
 /* ROOMS */
@@ -285,7 +312,62 @@ h2:after {
         font-size: 90%;
         text-align: left;
         line-height: 150%;
-      }      
+      }  
+      
+/* REVIEWS */
+.section-reviews {
+  background-image: -webkit-linear-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) , url(../img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(../img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed; /*fija la imagen a la pagina siempre.*/
+}   
+
+  .reviews-contentrow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+  }
+
+    .review-box {
+      padding: 1%; 
+    }
+
+      .review-box blockquote {
+        display: grid;
+        font-style: italic;
+        line-height: 145%;
+      }
+
+      .review-box p {
+        align-self: center;
+        text-align: justify;
+      }
+
+      .review-box a {
+        align-self: center;
+        justify-self: left;
+        font-size: 90%;
+      }
+
+      .review-box cite {
+        display: grid;
+        grid-template-columns: auto 1fr; 
+        column-gap: 10px;
+        margin-top: 15px;
+        align-items: center;
+        font-size: 90%;
+      }
+    
+        .review-icon {
+          justify-self: left;
+        }
+    
+        .review-signature {
+          justify-self: left;
+        }      
+
+
 /*----------------------------*/
 /* REUSABLE COMPONENTS */
 /*----------------------------*/
@@ -327,11 +409,6 @@ h2:after {
     color: #b61426;
   }
 
-  .icon-medium {
-    font-size: 240%;
-    display: inline;
-    vertical-align: middle;    
-  }
   .icon-small {
     display: inline-block;
     width: 30px;
@@ -355,3 +432,41 @@ h2:after {
   .icon-small:hover {
     color: #6b812f;
   }
+
+  .icon-medium {
+    font-size: 240%;
+    display: inline;
+    vertical-align: middle;    
+  }
+
+/*----------------------------*/
+/* KEY FRAMES*/
+/*----------------------------*/
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+}
+}
