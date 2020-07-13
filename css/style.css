@@ -557,8 +557,7 @@ h2:after {
   }
 
   .btn-red:hover {
-    background-color: rgb(56, 6, 11, .1);
-    color: #38060B;
+    background-color: #38060B;
     -webkit-transition: background-color .75s, color .75s;
     transition:  background-color .75s, color .75s;
   }
