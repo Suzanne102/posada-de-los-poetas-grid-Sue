@@ -9,6 +9,7 @@
   <!-- STYLES -->
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <script src="https://kit.fontawesome.com/05cdecc217.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400&display=swap" rel="stylesheet">    
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
@@ -26,225 +27,323 @@
   <div class="wrapper">
 
     <!-- HERO -->
-    <div class="hero-container">
-     <div class="hero-img"><img  src="/img/header_bg-min.jpg" alt=""></div>
-      <div class="hero-logo">
-        <img class="logo logo-animated" src="/img/slogo_black.png" alt="Posada de los Poetas">
-      </div>
-      <div class="hero-slogan">
-        <img class="slogan slogan-animated" src="/img/slogan.png" alt="">
-      </div>
-    </div>
+    <!-- <div class="hero">
+     <div class="hero__img"><img  src="/img/header_bg-min.jpg" alt=""></div>
+      <div class="hero__logo"><img class="logo logo-animated" src="/img/slogo_black.png" alt="Posada de los Poetas"></div>
+      <div class="hero__slogan"><img class="slogan slogan-animated" src="/img/slogan.png" alt="Disfruta del aire puro y sano de Villa San Lorenzo"></div>
+    </div> -->
+  <header>
+      <div class="hero">
+        <div class="hero__img"><img  src="/img/header_bg-min.jpg" alt=""></div>
+         <div class="hero__logo"><img class="logo logo-animated" src="/img/slogo_black.png" alt="Posada de los Poetas"></div>
+         <div class="hero__slogan"><img class="slogan slogan-animated" src="/img/slogan.png" alt="Disfruta del aire puro y sano de Villa San Lorenzo"></div>
+       </div>
+       <div class="container__nav">
+        <nav class="container__main-nav">
+         <!-- <img src="resources/img/logo_black.png" alt="Posada de los Poetas" class="logo-black"> -->
+             <ul class="main-nav js--main-nav">
+                 <li><a href="#services">Servicios</a></li>
+                 <li><a href="#eco-friendly">Eco-friendly</a></li>
+                 <li><a href="#rooms">Habitaciones</a></li>
+                 <li><a href="#offers">Promociones</a></li>
+             </ul>
+             <!-- <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars js--bars-icon"></i></a> -->
+         </nav>            
+    </div>       
+  </header>    
 
     <!-- SERVICES -->
-    <div class="section-container section-services" id="services">
+    <section class="section-container services" id="services">
         <h2 class="section-title">Nuestros Servicios</h2>
         <p class="section-body long-copy">
           Su arquitectura colonial, rodeada de verdes cerros donde comienza el bosque de Yungas, te brinda la serenidad que necesitas.<br>Las calles arboladas de Villa San Lorenzo, apropiadas por aves, sus arroyos cristalinos y la autenticidad de su gente, han otorgado a poetas y cantores la creatividad que enriqueció la cultura salteña.
         </p>
-        <div class="section-content services-contentrow">
-          <div class="service-box">
-            <div class="servicebox-title">
+        <div class="section-content services__contentrow">
+          <div class="services__box">
+            <div class="services__box--title">
               <i class="fas fa-concierge-bell icon-big"></i>
               <h3>De la Posada</h3>
             </div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Ingreso desde las 2pm.</div>    
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Salida hasta las 11am.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Desayuno buffet salteño, de 7.00am a 10.30am.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Cerca de bares, restaurantes y centros de spa.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Información sobre recorridos, paseos y bellezas naturales de nuestra provincia.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Ingreso desde las 2pm.</div>    
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Salida hasta las 11am.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Desayuno buffet salteño, de 7.00am a 10.30am.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Cerca de bares, restaurantes y centros de spa.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Información sobre recorridos, paseos y bellezas naturales de nuestra provincia.</div>
           </div>
-          <div class="service-box">
-            <div class="servicebox-title">
+          <div class="services__box">
+            <div class="services__box--title">
               <i class="fas fa-swimmer icon-big"></i>
               <h3>Al aire libre</h3>
             </div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Piscina y solarium.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Área de estacionamiento gratis.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Balcones con hermosas vistas.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Cámaras de seguridad.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Áreas de lectura y relajación rodeadas de naturaleza y la arquitectura colonial de la Posada.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Piscina y solarium.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Área de estacionamiento gratis.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Balcones con hermosas vistas.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Cámaras de seguridad.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Áreas de lectura y relajación rodeadas de naturaleza y la arquitectura colonial de la Posada.</div>
           </div>
-          <div class="service-box">
-            <div class="servicebox-title">
+          <div class="services__box">
+            <div class="services__box--title">
               <i class="fas fa-bed icon-big"></i>
               <h3>En el interior</h3>
             </div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Wifi gratis y TV por Cable.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Caja de seguridad grande y Camas Simmons.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Baños con bañeras o hidromasaje.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Climatización con loza radiante y aire acondicionado.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Frigobar y hervidor eléctrico con tazas e infusiones a elección.</div>             
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Wifi gratis y TV por Cable.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Caja de seguridad grande y Camas Simmons.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Baños con bañeras o hidromasaje.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Climatización con loza radiante y aire acondicionado.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Frigobar y hervidor eléctrico con tazas e infusiones a elección.</div>             
           </div>
-          <div class="service-box">
-            <div class="servicebox-title">
+          <div class="services__box">
+            <div class="services__box--title">
               <i class="fas fa-leaf icon-big"></i>
               <h3>Eco-friendly</h3>
             </div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Energía solar para precalentar agua sanitaria.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Iluminación LED y fotocélulas.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Productos de aseo y de limpieza biodegradables.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Utilización eficiente del agua sanitaria y de la piscina.</div>
-            <div class="servicebox-feature"><i class="fas fa-angle-right icon-small"></i>  Mantenimiento de piscina con iones de cobre y robot barrefondo.</div>          
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Energía solar para precalentar agua sanitaria.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Iluminación LED y fotocélulas.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Productos de aseo y de limpieza biodegradables.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Utilización eficiente del agua sanitaria y de la piscina.</div>
+            <div class="services__box--feature"><i class="fas fa-angle-right icon-small"></i>  Mantenimiento de piscina con iones de cobre y robot barrefondo.</div>          
           </div>
         </div>
-    </div>
-
+    </section>
     <!-- PHOTOS -->
-    <div class="section-container section-photos" id="photos">
-      <h2 class="section-title">Fotos</h2>
-      <p class="section-body long-copy"></p>
-      <div class="section-content photos-content"></div>
-    </div>
+    <section class="section-container photos" id="photos">
+      <h2 class="section-title">Nuestras Imágenes</h2>
+      <div class="section-content photos__contentrow">
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x800">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x801">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x802">
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x803">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x804">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x805">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x806">
+          </div>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x807">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x808">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x809">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x810">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x811">
+          </div>
+          <div class="gallery-box">
+            <img src="https://source.unsplash.com/1000x812">
+          </div>          
+        </div>                  
+      </div>
+    </section>
 
     <!-- ECO-FRIENDLY -->
-    <div class="section-container section-eco" id="eco-friendly">
+    <section class="section-container ecofriendly" id="eco-friendly">
       <h2 class="section-title">Nuestro compromiso con el Medio Ambiente</h2>
-      <p class="section-body long-copy">En concordancia con los principios de la Carta Mundial del Turismo Sostenible +20, en nuestra organización estamos comprometidos con la preservación del ambiente, el bienestar de nuestro equipo y el de nuestra comunidad.<br>Por ello, realizamos nuestro trabajo procurando satisfacer los siguientes principios:</p>
-      <div class="section-content eco-contentrow">
-        <div class="eco-img"><img  src="/img/eco-friendly.png" alt=""></div>
-        <div class="eco-listrow">
-          <div class="eco-listicon"><i class="fas fa-globe-americas icon-big"></i></div>
-          <div class="eco-listitem">Cumplir con las reglamentaciones vigentes relacionadas con el medio ambiente y la biodiversidad, el patrimonio histórico y cultural, la seguridad y la salud.</div>
-          <div class="eco-listicon"><i class="fas fa-tree icon-big"></i></div>
-          <div class="eco-listitem">Reducir los impactos ambientales de nuestras actividades.</div>
-          <div class="eco-listicon"><i class="fas fa-recycle icon-big"></i></div>
-          <div class="eco-listitem">Implementar acciones para reducir la contaminación, mejorar la ecoeficiencia y el uso responsable de los recursos</div>
-          <div class="eco-listicon"><i class="fas fa-seedling icon-big"></i></div>
-          <div class="eco-listitem">Preservar la biodiversidad y el patrimonio cultural a través de la difusión de su cuidado y valorización entre nuestros visitantes.</div>
+      <p class="section-body long-copy">
+        En concordancia con los principios de la Carta Mundial del Turismo Sostenible +20, en nuestra organización estamos comprometidos con la preservación del ambiente, el bienestar de nuestro equipo y el de nuestra comunidad.<br>Por ello, realizamos nuestro trabajo procurando satisfacer los siguientes principios:
+      </p>
+      <div class="section-content ecofriendly__contentrow">
+        <div class="ecofriendly__img"><img class="js--wp-1" src="/img/eco-friendly.png" alt=""></div>
+        <div class="ecofriendly__list">
+          <div class="ecofriendly__list--icon"><i class="fas fa-globe-americas icon-big"></i></div>
+          <div class="ecofriendly__list--item">Cumplir con las reglamentaciones vigentes relacionadas con el medio ambiente y la biodiversidad, el patrimonio histórico y cultural, la seguridad y la salud.</div>
+          <div class="ecofriendly__list--icon"><i class="fas fa-tree icon-big"></i></div>
+          <div class="ecofriendly__list--item">Reducir los impactos ambientales de nuestras actividades.</div>
+          <div class="ecofriendly__list--icon"><i class="fas fa-recycle icon-big"></i></div>
+          <div class="ecofriendly__list--item">Implementar acciones para reducir la contaminación, mejorar la ecoeficiencia y el uso responsable de los recursos</div>
+          <div class="ecofriendly__list--icon"><i class="fas fa-seedling icon-big"></i></div>
+          <div class="ecofriendly__list--item">Preservar la biodiversidad y el patrimonio cultural a través de la difusión de su cuidado y valorización entre nuestros visitantes.</div>
         </div>
       </div>
-      <div class="eco-buttonrow">
+      <div class="ecofriendly__btnrow">
         <!-- Tripadvisor CERTIFIED 2019 API -->  
         <a href="https://www.tripadvisor.com.ar/Hotel_Review-g1189799-d8466326-Reviews-Posada_de_los_Poetas_Hotel_Boutique-San_Lorenzo_Province_of_Salta_Northern_Argentina.html" target="_blank"><img src="./img/tripadvisor_2019.svg" alt="Tripadvisor 2019 Certified"></a>
         <!-- Expedia CERTIFIED 2019 API -->  
         <a href="https://www.tripadvisor.com.ar/Hotel_Review-g1189799-d8466326-Reviews-Posada_de_los_Poetas_Hotel_Boutique-San_Lorenzo_Province_of_Salta_Northern_Argentina.html" target="_blank"><img src="./img/tripadvisor_2019.svg" alt="Tripadvisor 2019 Certified"></a>        
         <!-- Booking CERTIFIED 2019 API -->  
-        <a href="https://www.booking.com/hotel/ar/posada-de-los-poetas-boutique.es-ar.html" target="_blank" ><img src="./img/booking_2020.png" alt="Tripadvisor 2019 Certified"></a>
+        <a href="https://www.booking.com/hotel/ar/posada-de-los-poetas-boutique.es-ar.html" target="_blank" ><img src="./img/booking_2020.png" alt="Booking 2020 Certified"></a>
       </div>
-    </div>
+    </section>
 
     <!-- ROOMS     -->
-    <div class="section-container section-rooms" id="rooms">
+    <section class="section-container rooms" id="rooms">
       <h2 class="section-title">Nuestras habitaciones</h2>
-      <p class="section-body long-copy">Cada habitación tiene su propio encanto. Decoradas homenajeando a obras de poetas salteños, cuentan con cómodas camas y adecuada climatización para obtener un reparador descanso.
-        Sus amplios baños ayudan a la relajación y las vistas desde sus balcones nos acercan a la arquitectura colonial, cielos únicos y el verde de las Yungas.<br>Las familias tienen la posibilidad de disfrutar de nuestros Departamento Cuádruple y Departamento Quíntuple, compuestos por habitaciones individuales comunicadas interiormente.</p>
-      <div class="section-content rooms-contentrow">
-        <div class="room-box">
-          <div class="roombox-title">
+      <p class="section-body long-copy">
+        Cada habitación tiene su propio encanto. Decoradas homenajeando a obras de poetas salteños, cuentan con cómodas camas y adecuada climatización para obtener un reparador descanso.
+        Sus amplios baños ayudan a la relajación y las vistas desde sus balcones nos acercan a la arquitectura colonial, cielos únicos y el verde de las Yungas.<br>Las familias tienen la posibilidad de disfrutar de nuestros Departamento Cuádruple y Departamento Quíntuple, compuestos por habitaciones individuales comunicadas interiormente.
+      </p>
+      <div class="section-content rooms__contentrow">
+        <div class="rooms__box">
+          <div class="rooms__box--title">
             <img src="./img/double_room.jpg" alt="">
             <h3>Habitación Doble Matrimonial</h3>
           </div>
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Cama Queen Simmons.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Bañera o hidromasaje.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Loza radiante y aire acondicionado.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Wifi y Tv por Cable.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Cama Queen Simmons.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Bañera o hidromasaje.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Loza radiante y aire acondicionado.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Wifi y Tv por Cable.</div> 
         </div>
-        <div class="room-box">
-          <div class="roombox-title">
+        <div class="rooms__box">
+          <div class="rooms__box--title">
             <img src="./img/triple_room.jpg" alt="">
             <h3>Habitación Triple</h3>
           </div>
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Camas individuales Simmons.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Bañera.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Loza radiante y aire acondicionado.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Wifi y Tv por Cable.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Camas individuales Simmons.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Bañera.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Loza radiante y aire acondicionado.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Wifi y Tv por Cable.</div> 
         </div>
-        <div class="room-box">
-          <div class="roombox-title">
+        <div class="rooms__box">
+          <div class="rooms__box--title">
             <img src="./img/twin_room.jpg" alt="">
             <h3>Habitación Doble Twin</h3>
           </div>
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Camas individuales Simmons.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Bañera o hidromasaje.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Loza radiante y aire acondicionado.</div> 
-          <div class="roombox-feature"><i class="fas fa-check icon-small"></i>Wifi y Tv por Cable.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Camas individuales Simmons.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Bañera o hidromasaje.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Loza radiante y aire acondicionado.</div> 
+          <div class="rooms__box--feature"><i class="fas fa-check icon-small"></i>Wifi y Tv por Cable.</div> 
         </div>                
       </div>
       <div class="short-copy">* Disponemos de cunas gratuitas para menores de 2 años y camas simples adicionales, con cargo, para niños de hasta 14 años.<br>* Los niños menores de 4 años pueden compartir cama con sus padres.</div>
-    </div>
+    </section>
 
     <!-- REVIEWS -->
-    <div class="section-container section-reviews" id="reviews">
+    <section class="section-container reviews" id="reviews">
       <h2 class="section-title">Nuestros Clientes</h2>
-      <div class="section-content reviews-contentrow">
+      <div class="section-content reviews__contentrow">
         
-        <div class="review-box">
+        <div class="reviews__box">
           <blockquote>
             <p>"La posada cuenta con todo el confort necesario para pasar una estadía placentera. El bello paisaje y La Paz que transmite San Lorenzo..."</p>
             <a class="link" href="https://www.tripadvisor.com.ar/ShowUserReviews-g1189799-d8466326-r719113146-Posada_de_los_Poetas_Hotel_Boutique-San_Lorenzo_Province_of_Salta_Northern_Arge.html" target="_blank">Ver más..</a>
             <cite>
-              <div class="review-icon"><i class="fab fa-tripadvisor icon-medium"></i></div>
-              <div class="review-signature"><p>Cecilia V</p></div>
+              <div class="reviews__icon"><i class="fab fa-tripadvisor icon-medium"></i></div>
+              <div class="reviews__signature"><p>Cecilia V</p></div>
             </cite>             
           </blockquote>
         </div>
        
-        <div class="review-box">
+        <div class="reviews__box">
           <blockquote>
-            <p>"Excelente lugar! Muy buena opción para descansar... bellísimo en su interior y exterior... la habitación es confortable, el baño amplio,el desayuno variado y..."</p>
+            <p>"Excelente lugar! Muy buena opción para descansar... bellísimo en su interior y exterior... la habitación es confortable, el baño amplio,..."</p>
               <a class="link" href="https://goo.gl/maps/vtR1JDZ1iGzPrxTm8" target="_blank">Ver más..</a>
             <cite>
-              <div class="review-icon"><i class="fab fa-google icon-medium"></i></div>
-              <div class="review-signature"><p>Noelia S</p></div>
+              <div class="reviews__icon"><i class="fab fa-google icon-medium"></i></div>
+              <div class="reviews__signature"><p>Noelia S</p></div>
             </cite>             
           </blockquote>
         </div>
         
-        <div class="review-box">
+        <div class="reviews__box">
           <blockquote>
             <p>"Todo, la atención las instalaciones realmente impecable a pocos minutos de la ciudad de Salta. Cuenta con un pequeño centro muy lindo y con.."</p>
               <a class="link" href="https://www.booking.com/hotel/ar/posada-de-los-poetas-boutique.es-ar.html#tab-reviews" target="_blank">Ver más..</a>
             <cite>
-              <div class="review-icon"><i class="fab fa-bootstrap icon-medium"></i></div>
-              <div class="review-signature"><p>Mirta</p></div>
+              <div class="reviews__icon"><i class="fab fa-bootstrap icon-medium"></i></div>
+              <div class="reviews__signature"><p>Mirta</p></div>
             </cite>             
           </blockquote>
         </div>
 
       </div>
-    </div>
+    </section>
 
     <!-- SPECIAL OFFERS -->
-    <div class="section-container section-offers" id="offers">
+    <section class="section-container offers" id="offers">
       <h2 class="section-title">Ofertas Especiales</h2>
-      <p class="section-body long-copy">Se aplican sólo para reservas directas por teléfono, correo electrónico o en la Posada.<br>Los turistas extranjeros que abonen con tarjeta de crédito tienen un descuento del 21% por exención del IVA.</p>
-      <div class="section-content offers-contentrow">
+      <p class="section-body long-copy">
+        Se aplican sólo para reservas directas por teléfono, correo electrónico o en la Posada.<br>Los turistas extranjeros que abonen con tarjeta de crédito tienen un descuento del 21% por exención del IVA.
+      </p>
+      <div class="section-content offers__contentrow">
 
-        <div class="offer-box">
-          <div class="offerbox-title"><h3>+4 Noches</h3></div>
-          <div class="offerbox-subtitle">25%<span> de descuento!</span></div>
-          <div class="offerbox-descrip">Obtenga un 25% de descuento en su hospedaje.</div>
-          <div class="offerbox-btn"><a href="#" class="btn btn-red">Reservar</a></div>        
+        <div class="offers__box">
+          <div class="offers__box--title"><h3>+4 Noches</h3></div>
+          <div class="offers__box--subtitle">25%<span> de descuento!</span></div>
+          <div class="offers__box--descrip">Obtenga un 25% de descuento en su hospedaje.</div>
+          <div class="offers__box--btn"><a href="mailto:info@posadadelospoetas.com.ar" class="btn btn-red">Reservar</a></div>        
         </div>
 
-        <div class="offer-box">
-          <div class="offerbox-title"><h3>4x3 Noches</h3></div>
-          <div class="offerbox-subtitle"><span>1 noche </span>GRATIS</div>
-          <div class="offerbox-descrip">¡Quédese 4 noches en el hotel y pague solamente 3!</div>
-          <div class="offerbox-btn"><a href="#" class="btn btn-red">Reservar</a></div>        
-        </div>
-
-
-        <div class="offer-box">
-          <div class="offerbox-title"><h3>3 Noches</h3></div>
-          <div class="offerbox-subtitle">15%<span> de descuento!</span></div>
-          <div class="offerbox-descrip">Obtenga un 15% de descuento en su hospedaje.</div>
-          <div class="offerbox-btn"><a href="#" class="btn btn-red">Reservar</a></div>        
+        <div class="offers__box">
+          <div class="offers__box--title"><h3>4x3 Noches</h3></div>
+          <div class="offers__box--subtitle"><span>1 noche </span>GRATIS</div>
+          <div class="offers__box--descrip">¡Quédese 4 noches en el hotel y pague solamente 3!</div>
+          <div class="offers__box--btn"><a href="mailto:info@posadadelospoetas.com.ar" class="btn btn-red">Reservar</a></div>        
         </div>
 
 
-        <div class="offer-box">
-          <div class="offerbox-title"><h3>2 Noches</h3></div>
-          <div class="offerbox-subtitle">10%<span> de descuento!</span></div>
-          <div class="offerbox-descrip">Obtenga un 10% de descuento en su hospedaje.</div>
-          <div class="offerbox-btn"><a href="#" class="btn btn-red">Reservar</a></div>        
+        <div class="offers__box">
+          <div class="offers__box--title"><h3>3 Noches</h3></div>
+          <div class="offers__box--subtitle">15%<span> de descuento!</span></div>
+          <div class="offers__box--descrip">Obtenga un 15% de descuento en su hospedaje.</div>
+          <div class="offers__box--btn"><a href="mailto:info@posadadelospoetas.com.ar" class="btn btn-red">Reservar</a></div>        
+        </div>
+
+
+        <div class="offers__box">
+          <div class="offers__box--title"><h3>2 Noches</h3></div>
+          <div class="offers__box--subtitle">10%<span> de descuento!</span></div>
+          <div class="offers__box--descrip">Obtenga un 10% de descuento en su hospedaje.</div>
+          <div class="offers__box--btn"><a href="mailto:info@posadadelospoetas.com.ar" class="btn btn-red">Reservar</a></div>        
         </div>
       </div>
-    </div>
+    </section>
 
  </div>
 
+ 
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot">
+        <div class="foot__nav">
+          <ul>
+            <li><a href="https://goo.gl/maps/e7GimWnoQXdKRMyUA" target="_blank">Cómo Llegar</a></li>
+            <li><a href="mailto:info@posadadelospoetas.com.ar"> E-mail</a></li>
+            <li><a href="callto:+5493874635634"> Llamar</a></li>
+        </ul>
+        </div>
+        <div class="foot__social">
+          <ul>
+              <li><a href="https://www.facebook.com/posadapoetas/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="https://www.instagram.com/posadapoetas/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://goo.gl/maps/nddLLqWBQUKEUJtm7" target="_blank"><i class="fab fa-google"></i></a></li>
+              <li><a href="https://www.tripadvisor.com.ar/Hotel_Review-g1189799-d8466326-Reviews-Posada_de_los_Poetas_Hotel_Boutique-San_Lorenzo_Province_of_Salta_Northern_Argentina.html" target="_blank"><i class="fab fa-tripadvisor"></i></a></li>
+              <li><a href="http://www.booking.com/hotel/ar/posada-de-los-poetas-boutique.html?lang=en" target="_blank"><i class="fab fa-bootstrap"></i></a></li>
+              <li><a href="https://wa.me/5493874635634?text=Hola!%20Quisiera%20hospedarme%20en%20el%20hotel.%20Me%20podr%C3%ADan%20brindar%20mas%20informaci%C3%B3n?%20Gracias!" target="_blank"><i class="fab fa-whatsapp hide-desktop show-mobile"></i></a></li>
+          </ul>
+        </div>   
+        <div class="foot__copy">
+          <p>Copyright &copy; 2020 by Posada de los Poetas. Todos los derechos reservados.</p>
+          <p>Webmaster - <a href="https://www.instagram.com/mpetron/" target="_blank" class="foot__link">@mpetron</a></p>
+          <br>
+          <p>
+              <a href="/en/index.html" class="footer-lang"><img src="/img/en.gif" alt="EN"></a>
+              <a href="#" class="footer-lang"><img src="/img/es.gif" alt="ES"></a>
+          </p>
+        </div>     
+      </div>
+  </footer>
 
+ <script src="js/script.js"></script>
 </body>
 </html>
