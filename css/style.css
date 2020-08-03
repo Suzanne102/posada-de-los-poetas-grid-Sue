@@ -5,6 +5,10 @@ Green Color: #76981B- #6b812f - #626B47 */
 /*----------------------------*/
 /* BASIC SETUP */
 /*----------------------------*/
+.hide-desktop {
+  display: none;
+}
+
 *,
 *::before,
 *::after {
@@ -82,7 +86,9 @@ span {
   flex: 0 1 50px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: center;
+  height: 60px;
 }
 
 .main-nav {
@@ -228,22 +234,25 @@ span {
         text-align: left;
         line-height: 2rem;
       }      
-  
-/* PHOTOS */
+
 .photos {
-  background-color: rgb(24, 11, 11) ;
-}
+  background-image: -webkit-linear-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) , url(../img/back-photos.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(../img/back-photos.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed; /*fija la imagen a la pagina siempre.*/
+}   
 
   .photos h2 {
     color: #F4F4F4;
   }
-
+  /* V1 */
   .gallery-container {
     display: flex;
     width: 100%;
     /* padding: 4% 2%; */
     box-sizing: border-box;
-    height: 35vh;/* height: 100vh; */
+    height: 50vh;/* height: 100vh; */
   }
 
   .gallery-box {
@@ -256,7 +265,7 @@ span {
   }
 
   .gallery-box > img {
-    width: 200%;
+    width: 150%; /*200%*/
     height: 100%;/* height: calc(100% - 10vh); */
     object-fit: cover; 
     transition: .5s;
@@ -275,7 +284,6 @@ span {
     width: 100%;
     height: 100%;
   }
-  
 
 /* ECO-FRIENDLY */
 .ecofriendly {
@@ -657,7 +665,8 @@ span {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 3rem;
-  padding-top: 1.4rem;
+  /* padding-top: 1.4rem; */
+  padding-top: 70px;
   padding-bottom: 4rem;
 }
 
