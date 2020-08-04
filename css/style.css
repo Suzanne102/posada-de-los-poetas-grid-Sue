@@ -118,6 +118,28 @@ span {
   border-bottom: 2px solid #da9a1d;
 } 
 
+/* Sticky Navi */
+.sticky {
+  position: fixed; /*always at the same point*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999; /*z dimension, 9999 is top front*/
+}
+
+.sticky .main-nav { margin-top: 16px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 8px 0px;
+  color: #555;
+}
+
+.sticky .logo { display: none;}
+.sticky .logo-black { display: block;}
+
 /*----------------------------*/
 /* GRID FLOWS */
 /*----------------------------*/
@@ -188,6 +210,14 @@ span {
       animation-fill-mode: backwards;
     }
 
+    .logo-black { 
+      display: none;
+      height: 50px; /*150*/
+      width: auto;
+      float: left;
+      margin: 5px 0;
+      padding-left: 15px;
+  }
 
 /* SERVICES */
 .services {
@@ -210,9 +240,10 @@ span {
               box-shadow: .4rem .4rem .2rem #efefef; /*x-offset y-offset blur*/          
     }
 
-    /*.services__box:hover {
-      animation: moveInLeft 1s ease-out;
-    }*/
+    /* .services__box:hover{
+      animation: moveInBottom 1.5s ease-out .75s;
+      animation-fill-mode: backwards;
+    } */
 
       .services__box--title {
         display: grid;

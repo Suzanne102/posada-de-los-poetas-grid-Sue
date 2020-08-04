@@ -1,13 +1,37 @@
 $(document).ready(function() {
 
-/* click on h3, and change his color to red. 
-    $('h3').click(function() {
-        $(this).css('background-color','#ff0000');
-    })
+// //  click on h3, and change his color to red. 
+//     $('h3').click(function() {
+//         $(this).css('background-color','#ff0000');
+//     })
 
-    $('.services__box').click(function() {
-        $(this).css('background-color','#ff0000');
-    })*/
+//     $('.services__box').click(function() {
+//         $(this).css('background-color','#ff0000');
+//     })
+
+//     // WAYPOINTS EXAMPLE
+//     var waypoints = $('services__box').waypoint(function(direction) {
+//         notify(this.element.id + ' hit 25% from top of window') 
+//     }, {
+//      offset: '25%'
+//     })
+
+
+/*For the sticky navigation */
+    $('.js--section-services').waypoint(function(direction) {
+        if (direction == "down") {
+            $('nav').addClass('sticky');
+            $('.js--container-nav').removeClass('hide-mobile');
+            $('.js--container-nav').addClass('show-mobile');
+        } else {
+            $('nav').removeClass('sticky');
+            $('.js--container-nav').addClass('hide-mobile');
+            $('.js--container-nav').removeClass('show-mobile');
+        }
+    }, { /*para que empiece 80px antes de donde le digo */
+        offset: '50px'
+       });
+/*END Sticky navigation */
 
 /*Navigation Scroll*/
     // Select all links with hashes
