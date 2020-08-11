@@ -32,7 +32,21 @@ $(document).ready(function() {
         offset: '50px'
        });
 /*END Sticky navigation */
+/*Animations on Scroll */
+    /*SERVICES*/
+    $('.js--wp-1').waypoint(function(direction) {
+        $('.js--wp-1').addClass('animated fadeIn');
+    }, { 
+        offset: '60%'
+       });
 
+    /*ECO-FRIENDLY*/
+    $('.js--wp-2').waypoint(function(direction) {
+        $('.js--wp-2').addClass('animated ecofriendly__img--animated');
+    }, { 
+        offset: '75%'
+        });  
+/*END Animations on Scroll */
 /*Navigation Scroll*/
     // Select all links with hashes
     $('a[href*="#"]')

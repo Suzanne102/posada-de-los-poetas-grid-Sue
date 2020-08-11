@@ -16,6 +16,7 @@ Green Color: #76981B- #6b812f - #626B47 */
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: none; /*quito el borde cuando se hace focus a un element*/
 }
 
 html,
@@ -80,7 +81,7 @@ span {
 /* NAV */
 /*----------------------------*/
 
- .container__nav {
+.container__nav {
   background-color: #b61426;
   
   flex: 0 1 50px;
@@ -125,7 +126,7 @@ span {
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 2px #efefef;
+  box-shadow: 0 4px 4px #efefef;
   z-index: 9999; /*z dimension, 9999 is top front*/
 }
 
@@ -155,6 +156,9 @@ span {
   display: grid;
   grid-template-columns: repeat(6,1fr);
   grid-template-rows: repeat(3,auto);
+  margin: 0;
+  padding: 0;
+  background-color: #b61426;
 
 }
 
@@ -359,6 +363,11 @@ span {
       height: auto;
       max-height: 90vh;
       border-radius: 5%; 
+    }
+
+    .ecofriendly__img--animated {
+      animation: moveInLeft .5s ease-out .75s;
+      animation-fill-mode: backwards;
     }
 
   .ecofriendly__list {
@@ -845,9 +854,23 @@ span {
 
 
 
+/*----------------------------*/
+/* Animations */
+/*----------------------------*/
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
 
-
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
 
 
 
