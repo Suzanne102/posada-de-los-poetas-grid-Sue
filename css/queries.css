@@ -22,6 +22,12 @@
     .show-mobile { display: block; } 
     .hide-mobile { display: none; } 
 
+    .hero__img img {
+        width: 100%;
+        height: auto;
+        max-height: 40vh;
+      }
+
     /* SERVICES */
     .services__contentrow { grid-template-columns: 1fr; }
 
