@@ -1,0 +1,110 @@
+/*Big tablets to 1200px (width smaller than the 1140px row*/
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*Small tablets to big tablets: 768 to 1023px*/
+@media only screen and (max-width: 1023px) {
+
+}    
+
+/*Small phones to small tablets: 481 to 767px*/
+@media only screen and (max-width: 767px) {
+
+}    
+
+/*Extra Small phones: 0 to 480px*/
+@media only screen and (max-width: 480px) {
+
+    html,
+    body { font-size: 37.5%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
+
+    .show-mobile { display: block; } 
+    .hide-mobile { display: none; } 
+
+    /* SERVICES */
+    .services__contentrow { grid-template-columns: 1fr; }
+
+    /* PHOTOS */
+    .gallery-container {
+        height: 70vh;
+        flex-direction: column;
+    }
+
+    .photos__btnrow { max-width: 90%; }
+
+    /* ECO-FRIENDLY */
+    .ecofriendly__contentrow {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
+    .ecofriendly__img img { max-height: 35vh; }
+
+    .ecofriendly__list { row-gap: 3rem; }
+
+    /* ROOMS */
+    .rooms__contentrow {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+        
+    .rooms__box--title {
+        grid-template-rows: 1fr;
+        row-gap: 2rem;
+    }
+
+    .rooms__box--title img { max-height: 30vh; }
+    
+    .rooms__box--title h3 { font-size: 3rem; }
+
+    /* REVIEWS */
+    .reviews__contentrow {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
+    .reviews__box blockquote {
+        display: grid;
+        font-style: italic;
+        line-height: 2rem;
+    }
+    
+    .reviews__box p { font-size: 2rem; }
+
+    .reviews__box a { font-size: 2rem; }
+
+    .reviews__box cite {
+        grid-template-columns: 1fr auto; 
+        margin-top: 0;
+    }
+
+    .reviews__icon { justify-self: right; }           
+    
+    /* SPECIAL OFFERS */
+    .offers__contentrow {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .offers__box {
+        margin-left: 5%;
+        max-width: 90%;
+    }
+
+    .offers__box--title h3{ font-size: 3rem; }
+
+    .offers__box--subtitle {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .offers__box--subtitle span { font-size: 3rem; }        
+
+    .offers__box--descrip { font-size: 2rem; }
+
+    .offers__box--btn a { font-size: 2rem; }    
+
+    /* FOOTER */
+    .foot__copy img { margin: 1rem; }
+
+}
