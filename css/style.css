@@ -561,8 +561,10 @@ footer { background-color: #333; }
 
 .foot {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px;
+  grid-template-columns: repeat(2,auto);
+  width: 90%;
+  margin-left: 5%;
+  padding: 20px 0;
 }
 
   .foot__nav { justify-self: left; }
