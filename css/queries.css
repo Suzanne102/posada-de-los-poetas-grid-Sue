@@ -25,7 +25,9 @@
     .hero__img img {
         width: 100%;
         height: auto;
-        max-height: 40vh;
+        min-height: 0;
+        max-height: 70vh;
+        max-height: calc(var(--vh, 1vh) * 70);
       }
 
     /* SERVICES */
@@ -34,6 +36,7 @@
     /* PHOTOS */
     .gallery-container {
         height: 70vh;
+        height: calc(var(--vh, 1vh) * 70);
         flex-direction: column;
     }
 
@@ -45,7 +48,11 @@
         row-gap: 3rem;
     }
     
-    .ecofriendly__img img { max-height: 35vh; }
+    .ecofriendly__img img { 
+        max-height: 40vh;
+        max-height: calc(var(--vh, 1vh) * 40); 
+        width: auto; 
+    }
 
     .ecofriendly__list { row-gap: 3rem; }
 
@@ -60,7 +67,10 @@
         row-gap: 2rem;
     }
 
-    .rooms__box--title img { max-height: 30vh; }
+    .rooms__box--title img { 
+        max-height: 30vh;
+        max-height: calc(var(--vh, 1vh) * 30); 
+    }
     
     .rooms__box--title h3 { font-size: 3rem; }
 
