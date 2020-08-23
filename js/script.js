@@ -36,10 +36,12 @@ $(document).ready(function() {
     $('.js--section-services').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
-            $('.js--container-nav').removeClass('hide-mobile');
+            $('.js--container-nav').removeClass('container__nav-color');
+            // $('.js--container-nav').removeClass('hide-mobile');
             $('.js--container-nav').addClass('show-mobile');
         } else {
             $('nav').removeClass('sticky');
+            $('.js--container-nav').addClass('container__nav-color');
             $('.js--container-nav').addClass('hide-mobile');
             $('.js--container-nav').removeClass('show-mobile');
         }
@@ -100,5 +102,25 @@ $(document).ready(function() {
     }
     });
 /*END Navigation Scroll*/    
+/*MOBILE NAVIGATION -- HIDE MENU WHEN CLICK ON ICON*/
+// $('.js--nav-icon').click(function() {
+//     var nav = $('.js--main-nav');
+//     var icon = $('.js--nav-icon svg');
+
+//     nav.slideToggle(200);
+//     if (icon.hasClass('js--bars-icon')) {
+//         icon.addClass('fas fa-times');
+//         icon.addClass('js--times-icon');
+//         icon.removeClass('fas fa-bars');
+//         icon.removeClass('js--bars-icon');
+        
+//     } else {
+//         icon.addClass('fas fa-bars');
+//         icon.addClass('js--bars-icon');
+//         icon.removeClass('fas fa-times');
+//         icon.removeClass('js--times-icon');
+//     }
+// })
+//  END MOBILE NAVIGATION
     
 });

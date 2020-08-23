@@ -81,9 +81,11 @@ span {
 /* NAV */
 /*----------------------------*/
 
-.container__nav {
+.container__nav-color {
   background-color: #b61426;
-  
+}
+
+.container__nav {  
   flex: 0 1 50px;
   display: flex;
   justify-content: flex-start;
@@ -141,6 +143,19 @@ span {
 
 .sticky .logo { display: none;}
 .sticky .logo-black { display: block;}
+
+/* Mobile Navi */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #FFF;
+}
 
 /*----------------------------*/
 /* GRID FLOWS */
@@ -619,6 +634,10 @@ footer { background-color: #333; }
     .foot__copy p, a, img {
       font-size: 1.4rem;
       color: #888;
+    }
+
+    .foot__copy .foot_contact {
+      color: #fff;
     }
 
   .foot__link:link,
