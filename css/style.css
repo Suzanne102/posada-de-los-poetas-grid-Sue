@@ -9,6 +9,10 @@ Green Color: #76981B- #6b812f - #626B47 */
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
 *,
 *::before,
 *::after {
