@@ -9,8 +9,13 @@
 
 <url>
   <loc>https://posadadelospoetas.com/</loc>
-  <lastmod>2020-08-26T14:20:22+00:00</lastmod>
+  <lastmod>2020-08-26T15:17:57+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
-
+<url>
+  <loc>https://posadadelospoetas.com/en/index.html</loc>
+  <lastmod>2020-08-26T15:18:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
