@@ -50,18 +50,23 @@ $(document).ready(function() {
        });
 /*END Sticky navigation */
 /*Animations on Scroll */
+    /*SPECIALS*/
+    $('.js--wp-3').waypoint(function(direction) {
+        $('.js--wp-3').addClass('animated specials__img--animated');
+    }, { 
+        offset: '90%'
+        });  
     /*SERVICES*/
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animated fadeIn');
     }, { 
         offset: '60%'
        });
-
     /*ECO-FRIENDLY*/
     $('.js--wp-2').waypoint(function(direction) {
         $('.js--wp-2').addClass('animated ecofriendly__img--animated');
     }, { 
-        offset: '75%'
+        offset: '90%'
         });  
 /*END Animations on Scroll */
 /*Navigation Scroll*/
