@@ -56,6 +56,12 @@ $(document).ready(function() {
     }, { 
         offset: '90%'
         });  
+    /*DISTINCTIONS*/
+    $('.js--wp-4').waypoint(function(direction) {
+        $('.js--wp-4').addClass('animated distinctions__contentrow--animated');
+    }, { 
+        offset: '90%'
+        });  
     /*SERVICES*/
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animated fadeIn');

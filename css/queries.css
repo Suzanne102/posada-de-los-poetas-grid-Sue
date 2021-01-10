@@ -67,6 +67,24 @@
         width: auto; 
     }
 
+    /* DISTINCTIONS */
+    .distinctions__contentrow { 
+        grid-template-columns: 1fr; 
+        row-gap: 6rem;
+    }
+            
+    .distinctions__img img { 
+        max-height: 20vh;
+        max-height: calc(var(--vh, 1vh) * 20); 
+        width: auto; 
+    }
+
+    .distinctions__txt {
+        text-align: center;
+        line-height: 35px;
+        
+      }
+
     /* SERVICES */
     .services__contentrow { grid-template-columns: 1fr; }    
 

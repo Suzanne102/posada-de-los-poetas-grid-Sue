@@ -303,6 +303,57 @@ span {
   animation-fill-mode: backwards;
 }
 
+/* DISTINCTIONS */
+.distinctions {
+  background-image: -webkit-linear-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) , url(../img/back-specials.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(../img/back-specials.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed; /*fija la imagen a la pagina siempre.*/
+}   
+
+.distinctions h2 {
+  color: #F4F4F4;
+  padding-bottom: 3rem;
+}
+.distinctions p{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.distinctions a{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #da9a1d;
+}
+
+.distinctions__contentrow {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 3rem;
+  padding: 0 2.5%;
+  align-items: center;
+  justify-items: center;
+}
+
+.distinctions__contentrow--animated {
+  animation: moveInRight .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+.distinctions__img img {
+  justify-self: center;
+  height: auto;
+  max-height: 30vh;
+}
+
+.distinctions__txt {
+  justify-self: left;
+  text-align: justify;
+  line-height: 50px;
+  
+}
+
 /* SERVICES */
 .services {
   background-color: #FFF ;
