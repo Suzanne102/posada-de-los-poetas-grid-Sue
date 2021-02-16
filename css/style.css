@@ -530,7 +530,7 @@ span {
       .ecofriendly__btnrow img {
         width: 100%;
         height: auto;
-        max-width: 15rem;
+        max-width: 250px;
         border-radius: 1.5rem;
       }
       
