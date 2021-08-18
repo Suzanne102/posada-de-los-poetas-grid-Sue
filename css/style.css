@@ -281,7 +281,7 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 3rem;
   column-gap: 6rem;
-  padding: 0 2.5%;
+  /* padding: 0 2.5%; */
 }
 
 .specials__items {
@@ -875,6 +875,15 @@ footer { background-color: #333; }
   font-size: 1.8rem;
   line-height: 3rem;
   width: 90%;
+  margin-left: 5%; 
+}
+
+.mid-copy{
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 90%;
+  text-align: center;
+  word-spacing: .2rem;
   margin-left: 5%; 
 }
 
