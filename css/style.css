@@ -686,6 +686,28 @@ span {
         font-size: 2rem;
       }
 
+    .offers__btnrow {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      justify-items: center;
+      align-items: center;
+      /* justify-self: center;   */
+      width: 70%;  
+      margin-left: 15%;
+    }
+
+      .offers__btnrow img {
+        width: 100%;
+        height: auto;
+        max-width: 100px;
+        border-radius: 1.5rem;
+      }
+      
+      .offers__btnrow a:link,
+      .offers__btnrow a:visited {
+          border: 0;
+      }      
+
 /* FOOTER */
 footer { background-color: #333; }
 

@@ -111,6 +111,14 @@
 
     .ecofriendly__list { row-gap: 3rem; }    
 
+    .ecofriendly__btnrow {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        align-content: center;
+    }
+
+
+
     /* ROOMS */
     .rooms__contentrow {
         grid-template-columns: 1fr;
@@ -153,7 +161,13 @@
         row-gap: 3rem;
     }
 
+    .offers__btnrow {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
     .offers__box {
+        row-gap: 2rem;
         margin-left: 5%;
         max-width: 90%;
     }
