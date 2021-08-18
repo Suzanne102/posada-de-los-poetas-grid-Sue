@@ -59,7 +59,6 @@
         grid-template-columns: 1fr; 
         row-gap: 6rem;
     }
-
         
     .specials__img img { 
         max-height: 15vh;
@@ -111,14 +110,6 @@
 
     .ecofriendly__list { row-gap: 3rem; }    
 
-    .ecofriendly__btnrow {
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
-        align-content: center;
-    }
-
-
-
     /* ROOMS */
     .rooms__contentrow {
         grid-template-columns: 1fr;
@@ -159,11 +150,6 @@
     .offers__contentrow {
         grid-template-columns: 1fr;
         row-gap: 3rem;
-    }
-
-    .offers__btnrow {
-        grid-template-columns: 1fr;
-        row-gap: 1rem;
     }
 
     .offers__box {
@@ -280,6 +266,18 @@
         max-height: 40vh;
         max-height: calc(var(--vh, 1vh) * 40); 
         width: auto; 
+    }
+
+    .ecofriendly__btnrow {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        align-content: center;
+    }
+
+    /* OFFERS */
+    .offers__btnrow {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
     }
 
     /* ROOMS */       
