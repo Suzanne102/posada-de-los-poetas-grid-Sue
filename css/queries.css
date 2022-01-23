@@ -20,7 +20,16 @@
         height: calc(var(--vh, 1vh) * 50);
     }
 
-    .photos__btnrow { max-width: 75%; }   
+    /* .photos__btnrow { max-width: 75%; }   */
+    .photos__btnrow { 
+        max-width: 80%;
+        margin-left: 10%; 
+    }
+
+    .custom-icon-big {
+        width: 6rem;
+        height: 6rem;
+      }
 
     /* ECO-FRIENDLY */
     .ecofriendly__list--item { font-size: 1.5rem;}
@@ -94,7 +103,16 @@
         flex-direction: column;
     }
 
-    .photos__btnrow { max-width: 90%; }    
+    /* .photos__btnrow { max-width: 90%; } */
+    .photos__btnrow { 
+        max-width: 100%;
+        margin-left: 0%; 
+    }
+
+    .custom-icon-big {
+        width: 5rem;
+        height: 5rem;
+      }
     
     /* ECO-FRIENDLY */
     .ecofriendly__contentrow {

@@ -329,7 +329,7 @@ span {
 
 .distinctions__contentrow {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr 1fr;
   column-gap: 3rem;
   padding: 0 2.5%;
   align-items: center;
@@ -353,6 +353,28 @@ span {
   line-height: 50px;
   
 }
+
+.distinctions__booknow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #da9a1d;
+  opacity: 0.7;
+  border-radius: 50%;
+  min-width: 200px;
+  min-height: 200px;
+  cursor: pointer;
+  color: white;  
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.distinctions__booknow:hover {
+  opacity: 1;
+  color: #b61426;
+}
+
 
 /* SERVICES */
 .services {
@@ -451,7 +473,7 @@ span {
     width: 100%;
     height: 100%;
   }
-
+/* 
   .photos__btnrow {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
@@ -461,7 +483,18 @@ span {
     margin-left: 5%;
     margin-top: 3rem;
     align-items: center;
-    justify-items: center;
+    justify-items:center;
+  } */
+
+
+  .photos__btnrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-top: 3rem;
   }
 
     .photos__btnrow a:link,
@@ -469,11 +502,11 @@ span {
       border: 0;
     }
 
-    .photos__btnrow img {
+    /* .photos__btnrow img {
         width: 100%;
         height: auto;
         max-width: 10rem;
-    }
+    } */
 
 
 
@@ -790,7 +823,7 @@ footer { background-color: #333; }
       color: #da9a1d;
   }
 
-  .fa-facebook-square,
+  /* .fa-facebook-square,
   .fa-instagram,
   .fa-bootstrap,
   .fa-whatsapp,
@@ -798,7 +831,7 @@ footer { background-color: #333; }
   .fa-google {
       -webkit-transition: color 0.5s;
       transition: color 0.5s;
-  }
+  } 
 
 
   .fa-facebook-square:hover,
@@ -830,7 +863,7 @@ footer { background-color: #333; }
   .fa-google:active {
       color: #4285F4;   
   }
- 
+  */
 
 
 
@@ -985,11 +1018,54 @@ footer { background-color: #333; }
     color: #6b812f;
   }
 
-.icon-medium {
+/* .icon-medium {
   font-size: 4rem;
   display: inline;
   vertical-align: middle;    
+} */
+
+
+/* CUSTOM ICONS */
+
+.custom-icon {
+  display: inline-block;
+  background-size: cover;
 }
+
+.custom-icon-small {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.custom-icon-medium {
+  width: 5rem;
+  height: 5rem;
+}
+
+.custom-icon-big {
+  width: 8rem;
+  height: 8rem;
+}
+
+.icon-facebook {
+  background-image: url('/img/icons/fb_icon.svg');
+}
+.icon-instagram {
+  background-image: url('/img/icons/ig_icon.svg');
+}
+.icon-google {
+  background-image: url('/img/icons/google_icon.svg');
+}
+.icon-tripadvisor {
+  background-image: url('/img/icons/trip_icon.svg');
+}
+.icon-booking {
+  background-image: url('/img/icons/booking_icon.svg');
+}
+.icon-whatsapp {
+  background-image: url('/img/icons/wpp_icon.svg');
+}
+
 
 /* BUTTONS */
 .btn:link,
