@@ -245,8 +245,8 @@ span {
 
  /* SPECIALS! */
  .specials {
-  background-image: -webkit-linear-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) , url(../img/back-specials.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(../img/back-specials.jpg);
+  background-image: -webkit-linear-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) , url(../img/back-specials2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(../img/back-specials2.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed; /*fija la imagen a la pagina siempre.*/
@@ -305,8 +305,8 @@ span {
 
 /* DISTINCTIONS */
 .distinctions {
-  background-image: -webkit-linear-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) , url(../img/back-specials.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(../img/back-specials.jpg);
+  background-image: -webkit-linear-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) , url(../img/back-specials2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) , url(../img/back-specials2.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed; /*fija la imagen a la pagina siempre.*/
