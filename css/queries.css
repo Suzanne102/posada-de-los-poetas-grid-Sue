@@ -200,19 +200,28 @@
     body { font-size: 43.75%; /*100% = 16px, I want 10px = 62.5% for responsive design*/ }
 
     /* HERO */
-    .hero { background-color: none; }
+    /* .hero { background-color: none; } */
 
+    header {
+        height: 50vh;
+    }
+
+    .hero {
+        height: 100%;
+    }
+    
     .hero__logo { 
         grid-column-start: 5; 
         grid-column-end: 6; 
-    }
+    } 
+     
     
-    .logo {
-        margin: 1.5rem;
-        width: 150%;
+     .logo {
+        margin: 1rem;
+        width: 100%;
         height: auto;
         max-height: auto;
-    }
+    } 
 
     .hero__slogan { 
         grid-column-start: 4; 
@@ -232,8 +241,7 @@
     .hero__img img {
         min-height: 0;
         width: 100%;
-        height: 60vh;
-        height: calc(var(--vh, 1vh) * 60);
+        height: 100%;
       }
 
     /* .container__nav {
